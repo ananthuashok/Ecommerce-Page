@@ -31,13 +31,19 @@ cart.addEventListener('touchstart', () => {
         click = false;
     }
 })
+let orderSummary = document.querySelector('.order-summary')
+let OrderSummary = document.querySelector('.order-Summary')
 // The show the order preview on click
 Cart.addEventListener('click', () => {
     if (!click) {
         OrderDetails.classList.add('show')
+        OrderSummary.style.display='block';
+        orderSummary.style.display='block';
         click = true;
     } else {
         OrderDetails.classList.remove('show')
+        OrderSummary.style.display='none';
+        orderSummary.style.display='none';
         click = false;
     }
 })
@@ -127,8 +133,8 @@ Minus.addEventListener('click', () => {
 // Add to Cart Button functionality
 let addtoCartBtn = document.querySelector('.btn-cart')
 let AddtoCartBtn = document.querySelector('.btn-Cart')
-let orderSummary = document.querySelector('.order-summary')
-let OrderSummary = document.querySelector('.order-Summary')
+// let orderSummary = document.querySelector('.order-summary')
+// let OrderSummary = document.querySelector('.order-Summary')
 // Add the product to the cart on touch
 addtoCartBtn.addEventListener('touchstart', () => {
     // If the quantity of is 0 then abort the function 
