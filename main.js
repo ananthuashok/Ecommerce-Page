@@ -338,7 +338,6 @@ const lightbox = document.querySelector('.lightbox')
 const target = document.querySelector('.target')
 const next = document.querySelector('#right')
 const prev = document.querySelector('#left')
-// const cover = document.querySelectorAll('.cover')
 let pos = 0;
 // Change the image node list into an array 
 var imgArr = Array.from(img);
@@ -380,6 +379,10 @@ display.addEventListener('click', () => {
             imgL[i].classList.add('show-l')
         }
     }
+})
+const close = document.getElementById('close');
+close.addEventListener('click',()=>{
+    lightbox.style.display = 'none';
 })
 imgL.forEach(Limage => {
     function clearL() {
@@ -434,8 +437,8 @@ lightbox.addEventListener('click', (e) => {
 function changeL() {
     target.innerHTML = `
     <img id="target-image" style="height: 100%; width: 100%;" src=${imgL[pos].src} >
-    <img id="right" class="arrow" src="/images/icon-next.svg" alt=""   style=" ">
-    <img id="left" class="arrow" src="/images/icon-previous.svg" alt=""style=" ">
+    <img id="right" class="arrow" src="./images/icon-next.svg" alt=""   style=" ">
+    <img id="left" class="arrow" src="./images/icon-previous.svg" alt=""style=" ">
     `;
     const next = document.querySelector('#right')
     const prev = document.querySelector('#left')

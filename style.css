@@ -186,6 +186,18 @@ hr {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.639);
 }
+.desktop-version .container .lightbox .close-target {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desktop-version .container .lightbox .close-target #close {
+  position: absolute;
+  top: 10%;
+  margin-left: 550px;
+  cursor: pointer;
+}
 .desktop-version .container .lightbox .lightbox-images {
   margin-top: 5vh;
   display: flex;
@@ -509,6 +521,9 @@ hr {
     z-index: 0;
     width: 0;
     height: 0;
+  }
+  .desktop-version .container .lightbox .close-target {
+    display: none;
   }
   .desktop-version .container .lightbox .lightbox-images {
     margin-top: 0vh;
