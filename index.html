@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
+  <title>E-commerce product page</title>
+</head>
+<body>
+<!-- Desktop Version -->
+<div class="desktop-version">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="./images/logo.svg" alt="Logo" id="logo">
+    <ul class="list">
+      <li class="list-item list-item-1">Collections</li>
+      <li class="list-item list-item-2">Men</li>
+      <li class="list-item list-item-3">Woman</li>
+      <li class="list-item list-item-4">About</li>
+      <li class="list-item list-item-5">Contact</li>
+    </ul>
+    <!-- Container with profile and the cart -->
+    <div class="profile-cart">
+    <img src="./images/icon-cart.svg" alt="cart" id="Cart">
+    <div class="Order-details">
+      <div class="heading">
+        <h4>Cart</h4>
+      </div>
+      <hr>
+      <p id="Placeholder">Your Cart is Empty</p>
+      <div class="order-Summary">
+      </div>
+    </div>
+    <img src="./images/image-avatar.png" alt="avatar" id="avatar">  
+    </div>
+  </nav>
+  <hr id="horizontal-line">
+  <!-- The container which contains the lightbox -->
+  <div class="container">
+    <div class="lightbox" style=" " >
+      <!-- The primary image shown in the lightbox -->
+      <div style=""  class="target" >
+      </div>
+      <!-- The list of images in the lightbox -->
+      <div class="lightbox-images">
+        <span class="cover-l"><img style="width: 10vh; height: 10vh;" class="img-l " src="./images/image-product-1.jpg" alt=""></span>
+        <span class="cover-l"><img style="width: 10vh; height: 10vh;" class="img-l " src="./images/image-product-2.jpg" alt=""></span>
+        <span class="cover-l"><img style="width: 10vh; height: 10vh;" class="img-l " src="./images/image-product-3.jpg" alt=""></span>
+        <span class="cover-l"><img style="width: 10vh; height: 10vh;" class="img-l " src="./images/image-product-4.jpg" alt=""></span>
+      </div>  
+  </div>
+  <!-- The image gallery -->
+    <div class="showcase">
+      <!-- The primary image -->
+      <div class="display">
+        <img  style="height: 100%; width: 100%;" src="images/image-product-1.jpg" >
+      </div>
+      <!-- The list of images underneath the primary image -->
+      <div class="image-list">
+        <span class="cover"><img style="width: 10vh; height: 10vh;" class="img show" src="./images/image-product-1.jpg" alt=""></span>
+        <span class="cover"><img style="width: 10vh; height: 10vh;" class="img " src="./images/image-product-2.jpg" alt=""></span>
+        <span class="cover"><img style="width: 10vh; height: 10vh;" class="img " src="./images/image-product-3.jpg" alt=""></span>
+        <span class="cover"><img style="width: 10vh; height: 10vh;" class="img " src="./images/image-product-4.jpg" alt=""></span>
+      </div>
+    </div>
+    <!-- Section containing description , and add-to-cart -->
+    <div class="description">
+      <h4 id="heading">SNEAKER COMPANY</h4>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p id="content">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+      </p>
+      <!-- Area to show the price of the product -->
+      <div class="price-container">
+        <div id="price">
+          <p id="dollar">$</p>
+          <p id="amount">0</p>
+        </div>
+        <!-- The area to add items and add-to-cart -->
+        <div class="add-to-cart">
+          <!-- The area to add and less the order -->
+          <div class="order-number">
+            <!-- Minus -->
+            <img src="./images/icon-minus.svg"  id="Less" alt="">
+            <p id="Quantity">0</p>
+            <!-- Plus -->
+            <img src="./images/icon-plus.svg" id="Add" alt="">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn btn-Cart"><img id="target" src="./images/icon-cart.svg" alt="">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The mobile version -->
+<div class="mobile-version">
+    <!-- The Navbar -->
+    <div class="navbar">  
+      <!-- Hamburger Menu -->
+      <img id="hamburger-menu" src="./images/icon-menu.svg"/>
+      <!-- The Hidden Menu -->
+      <div class="hidden-menu">
+        <img src="./images/icon-close.svg" id="hamburger-close" alt="img">
+        <ul class="hidden-list">
+          <li class="list-item">Collections</li>
+          <li class="list-item">Men</li>
+          <li class="list-item">Women</li>
+          <li class="list-item">About</li>
+          <li class="list-item">Contact</li>
+        </ul>
+      </div>
+      <!-- Order Details -->
+      <div class="order-details">
+        <div class="heading">
+          <h4>Cart</h4>
+        </div>
+        <hr>
+        <p id="placeholder">Your Cart is Empty</p>
+        <!-- The div where the order summary will be shown -->
+        <div class="order-summary">
+          
+        </div>
+      </div>
+      <!-- Logo -->
+      <img src="./images/logo.svg" alt="logo" id="logo">
+      <!-- Shopping Cart -->
+      <img src="./images/icon-cart.svg" alt="cart" id="cart">
+      <!-- Avatar -->
+      <img src="./images/image-avatar.png" alt="avatar" id="profile">
+    </nav>
+  </div>
+  <!-- The image gallery -->
+  <div class="gallery">
+    <!-- Previous arrow -->
+    <img src="./images/icon-previous.svg" class="arrow" id="arrow-left"/>
+    <!-- The image slider -->
+    <div id="slider">
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+    </div>
+    <!-- Next arrow -->
+    <img src="./images/icon-next.svg" class="arrow" id="arrow-right"/>  </div>
+    
+    <!-- Section containing description , and add-to-cart -->
+  <div class="description">
+    <h4>SNEAKER COMPANY</h4>
+    <h2>Fall Limited Edition Sneakers</h2>
+    <p>These low-profile sneakers are your perfect casual wear companion . Featuring a durable rubber outer sole , they will withstand everything the weather can offer</p>
+  </div>
+  <!-- Area to show the order details of the product -->
+  <div id="order-details">
+    <!-- Show the price of the order -->
+    <div class="amount">
+      <p id="dollar">$</p>
+      <p id="total-amt">0</p>
+    </div>
+    <!-- The area to add or decrease the order quantity  -->
+    <div class="order-number">
+      <img src="./images/icon-minus.svg"  id="less" alt="">
+      <p id="quantity">0</p>
+      <img src="./images/icon-plus.svg" id="add" alt="">
+    </div>
+    <button class="btn btn-cart"><img id="target" src="./images/icon-cart.svg" alt="">Add to cart</button>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
